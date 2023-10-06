@@ -20,7 +20,7 @@ public class GatewayDiscordClientConfiguration {
     public GatewayDiscordClient createClient(Services services) {
         String botToken = services.props.isUseDevBotToken() ?
                 System.getenv("DEV_BOT_TOKEN")
-                : System.getenv("DISCORD_BOT_TOKEN");
+                : System.getenv(MTE1OTkzOTUwMjk3MDc3MzU2Nw.GpMehu.AerhNgRdjNFPTRVWO50Fes8li3H45CBw0XNH-4);
         GatewayDiscordClient client = DiscordClient.create(botToken)
                 .gateway()
                 .setEntityRetrievalStrategy(gateway -> new CustomFallbackEntityRetrieverWithAddedCacheMissLogging(
